@@ -68,7 +68,7 @@ public class AttackOnTitan {
     private boolean eldiano; // Seu personagem é Eldiano?
     private boolean nascidoParadis; // Seu personagem nasceu na Ilha Paradis?
     private boolean sangueReal; // Seu personagem tem sangue da família real de Eldia?
-    private boolean restringido; // Seu personagem é restringido por uma promessa?
+    private boolean restringido; // Seu personagem é restringido por uma promessa?  Jura da Renúncia a Guerra
     private boolean sofrePreconceito; // Seu personagem sofre preconceito?
     private boolean transformaGigante; // Seu personagem pode se transformar em um gigante?
     private boolean marleyano; // Seu personagem é Marleyano?
