@@ -1,6 +1,6 @@
 public class AttackOnTitan {
-    public AttackOnTitan(boolean estaMorto, boolean eldiano, boolean nascidoParadis, boolean sangueReal,
-                         boolean restringido, boolean sofrePreconceito, boolean transformaGigante, boolean marleyano,
+    public AttackOnTitan(String nome, boolean estaMorto, boolean eldiano, boolean nascidoParadis, boolean sangueReal,
+                         boolean restringido, boolean sofrePreconceito, boolean transformaTita, boolean marleyano,
                          boolean candidatoGuerreiro, boolean guerreiro, boolean soldado, boolean tropaExploracao,
                          boolean comandanteTropaExploracao, boolean esquadraoLevi, boolean guarnicao,
                          boolean policiaMilitar, boolean passadoTraumatico, boolean cidadeNatalDestruida,
@@ -8,17 +8,18 @@ public class AttackOnTitan {
                          boolean leal, boolean manipulado, boolean devorado, boolean usaArma, boolean usaEspada,
                          boolean usaOculos, boolean foiTraido, boolean infiltrado, boolean temIrmaos, boolean crianca,
                          boolean mulher, boolean senteCulpa, boolean temCabelo, boolean cabelosLongos,
-                         boolean cabeloLoiro, boolean cabeloMarrom, boolean cabeloPreto, boolean poderes,
+                         boolean cabeloLoiro, boolean cabeloMarrom, boolean cabeloPreto, boolean temPoderes,
                          boolean manipularMemorias, boolean enrijecimento, boolean verFuturo, boolean maiorColossal,
                          boolean artesMarciais, boolean relacaoAnimal, boolean consegueFalar, boolean quadrupede,
                          boolean gigante, boolean veloz) {
+        this.nome = nome;
         this.estaMorto = estaMorto;
         this.eldiano = eldiano;
         this.nascidoParadis = nascidoParadis;
         this.sangueReal = sangueReal;
         this.restringido = restringido;
         this.sofrePreconceito = sofrePreconceito;
-        this.transformaGigante = transformaGigante;
+        this.transformaTita = transformaTita;
         this.marleyano = marleyano;
         this.candidatoGuerreiro = candidatoGuerreiro;
         this.guerreiro = guerreiro;
@@ -51,7 +52,7 @@ public class AttackOnTitan {
         this.cabeloLoiro = cabeloLoiro;
         this.cabeloMarrom = cabeloMarrom;
         this.cabeloPreto = cabeloPreto;
-        this.poderes = poderes;
+        this.temPoderes = temPoderes;
         this.manipularMemorias = manipularMemorias;
         this.enrijecimento = enrijecimento;
         this.verFuturo = verFuturo;
@@ -64,13 +65,14 @@ public class AttackOnTitan {
         this.veloz = veloz;
     }
 
+    private String nome;
     private boolean estaMorto; // Seu personagem já está morto?
     private boolean eldiano; // Seu personagem é Eldiano?
     private boolean nascidoParadis; // Seu personagem nasceu na Ilha Paradis?
     private boolean sangueReal; // Seu personagem tem sangue da família real de Eldia?
     private boolean restringido; // Seu personagem é restringido por uma promessa?  Jura da Renúncia a Guerra
     private boolean sofrePreconceito; // Seu personagem sofre preconceito?
-    private boolean transformaGigante; // Seu personagem pode se transformar em um gigante?
+    private boolean transformaTita; // Seu personagem pode se transformar em um titã?
     private boolean marleyano; // Seu personagem é Marleyano?
     private boolean candidatoGuerreiro; // Seu personagem é um candidato a guerreiro?
     private boolean guerreiro; // Seu personagem é um guerreiro?
@@ -103,7 +105,7 @@ public class AttackOnTitan {
     private boolean cabeloLoiro; // Seu personagem tem cabelos loiros?
     private boolean cabeloMarrom; // Seu personagem tem cabelos marrons?
     private boolean cabeloPreto; // Seu personagem tem cabelos pretos?
-    private boolean poderes; // Seu personagem tem poderes?
+    private boolean temPoderes; // Seu personagem tem poderes?
     private boolean manipularMemorias; // Seu personagem pode manipular memórias?
     private boolean enrijecimento; // Seu personagem domina o enrijecimento de titã?
     private boolean verFuturo; // Seu personagem pode ver acontecimentos do futuro?
@@ -114,6 +116,14 @@ public class AttackOnTitan {
     private boolean quadrupede; // Seu personagem é quadrúpede?
     private boolean gigante; // Seu personagem é gigante?
     private boolean veloz; // Seu personagem é veloz?
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
     public boolean isVeloz() {
         return veloz;
@@ -195,12 +205,12 @@ public class AttackOnTitan {
         this.manipularMemorias = manipularMemorias;
     }
 
-    public boolean isPoderes() {
-        return poderes;
+    public boolean isTemPoderes() {
+        return temPoderes;
     }
 
-    public void setPoderes(boolean poderes) {
-        this.poderes = poderes;
+    public void setTemPoderes(boolean temPoderes) {
+        this.temPoderes = temPoderes;
     }
 
     public boolean isCabeloPreto() {
@@ -459,12 +469,12 @@ public class AttackOnTitan {
         this.marleyano = marleyano;
     }
 
-    public boolean isTransformaGigante() {
-        return transformaGigante;
+    public boolean isTransformaTita() {
+        return transformaTita;
     }
 
-    public void setTransformaGigante(boolean transformaGigante) {
-        this.transformaGigante = transformaGigante;
+    public void setTransformaTita(boolean transformaTita) {
+        this.transformaTita = transformaTita;
     }
 
     public boolean isSofrePreconceito() {
