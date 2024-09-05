@@ -782,6 +782,82 @@ public class Main {
         ArrayList<AttackOnTitan> backup = (ArrayList<AttackOnTitan>) personagens.clone();
         Scanner teclado = new Scanner(System.in);
 
+        System.out.println("""
+                Pense em um dos seguintes personagens e eu tentarei adivinhar qual você escolheu:
+                ------------------------------------
+                MikasaAckerman
+                Armin Arlert
+                Jean Kirstein
+                Connie Springer
+                Reiner Braun
+                Annie Leonhart
+                Krista Lenz
+                Historia Reiss
+                Levi Ackerman
+                Hitch Dreyse
+                Pieck Finger
+                Falco Grice
+                Gabi Braun
+                Kaya
+                Onyankopon
+                Yelena
+                Nicolo
+                Eren Yeager
+                Hannes
+                Grisha Yeager
+                Dina Fritz
+                Keith Shadis
+                Sasha Braus
+                Bertolt Hoover
+                Erwin Smith
+                Dot Pixis
+                Hange Zoe
+                Marco Bott
+                Darius Zackly
+                Mike Zacharias
+                Nile Dok
+                Pastor Nick
+                Petra Rall
+                Oluo Bozard
+                Eld Jinn
+                Gunther Schultz
+                Ymir
+                Marlo Freudenberg
+                Marcel Galliard
+                Porco Galliard
+                Kenny Ackerman
+                Rodd Reiss
+                Frieda Reiss
+                Uri Reiss
+                Zeke Yeager
+                Carla Yeager
+                Ymir Fritz
+                Eren Kruger
+                Floch Forster
+                Teo Magath
+                Colt Grice
+                Zofia
+                Udo
+                Willy Tybur
+                Tom Ksaver
+                Titã Colossal
+                Titã Blindado
+                Titã de Ataque
+                Titã Fêmea
+                Titã Bestial
+                Titã Mandíbula de Ymir
+                Titã Fundador de Frieda Reiss
+                Titã de Ataque de Grisha Yeager
+                Titã Fundador de Ymir Fritz
+                Titã de Rodd Reiss
+                Titã Carroceiro
+                Titã Mandíbula de Porco Galliard
+                Titã Mandíbula de Falco Grice
+                Titã Martelo de Guerra
+                Titã Fundador de Eren Yeager
+                ------------------------------------""");
+
+
 
         System.out.println("Seu personagem é mulher? (s/n)"); // Pergunta 1
         String mulher = teclado.nextLine();
@@ -1746,10 +1822,10 @@ public class Main {
         }
 
         if (personagens.isEmpty()){
-            System.out.println("Não sei");
+            System.out.println("Não sei qual personagem você pensou. Você me venceu");
+        } else {
+            System.out.println("Você pensou em " + personagens.getFirst().getNome());
         }
-
-        System.out.println(personagens.getFirst().getNome());
 
     }
 }
